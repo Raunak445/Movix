@@ -18,7 +18,7 @@ import Select from "react-select";
 import { CircleRating } from "../circleRating/CircleRating";
 import Genres from "../genres/Genres";
 
-const Carousel = ({ data, loading }) => {
+const Carousel = ({ data, loading ,endpoint}) => {
   // to select any element from virtual dom
   // use ref and pass instance of useRef to that element by property of ref
   // you can access the element through .current property of reference
@@ -72,7 +72,7 @@ const Carousel = ({ data, loading }) => {
                 ? url.poster + item.poster_path
                 : PosterFallback;
               return (
-                <div key={item.id} className="carouselItem" onClick={()=>navigate(`/${item.media_type}/${item.id}`)}>
+                <div key={item.id} className="carouselItem" onClick={()=>navigate(`/${item.media_type||endpoint}/${item.id}`)}>
               
                     <div className="posterBlock">
                       <Img src={posterUrl}></Img>
