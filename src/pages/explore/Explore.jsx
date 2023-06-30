@@ -38,7 +38,7 @@ const Explore = () => {
 
     const fetchInitialData = () => {
         setLoading(true);
-        fetchDataFromApi(`/discover/${mediaType}`, filters).then((res) => {
+        fetchDataFromApi(`/discover/${mediaType}`,filters).then((res) => {
             setData(res);
             setPageNum((prev) => prev + 1);
             setLoading(false);
