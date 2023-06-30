@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import SwitchTabs from "../switchTabs/switchTabs";
+import SwitchTabs from "../switchTabs/SwitchTabs";
 
 import Carousel from "../carousel/Carousel";
 import useFetch from "../../hooks/useFetch";

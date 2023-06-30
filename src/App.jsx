@@ -61,7 +61,7 @@ function App() {
         {/*  mediaType=  whether it is movie or tv show */}
         <Route path="/:mediaType/:id" element={<Details />}></Route>
         <Route path="/search/:query" element={<SearchResults />}>
-          <Route path=".explore/:mediaType" element={<Explore />}></Route>
+          <Route path=".explore/:mediaType" element={<Explore/>}></Route>
 
           <Route path="*" element={<PageNotFound />}></Route>
         </Route>
